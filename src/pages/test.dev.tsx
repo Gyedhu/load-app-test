@@ -9,7 +9,7 @@ const Dev = () => {
     <div>
       <NavigationButton isActive={true}>Trainings </NavigationButton>
 
-      <SidebarButton isExpanded={false} icons={<IoHomeOutline />}>
+      <SidebarButton isExpanded={false} icon={<IoHomeOutline />}>
         Home
       </SidebarButton>
     </div>

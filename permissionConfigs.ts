@@ -13,35 +13,53 @@ type PermissionConfigs = Record<string, {
 export const permissionConfigs: PermissionConfigs = {
   ADMIN: {
     allowedPages: {
-      "/home": {
+      "/home.dev": {
         view: true,
         create: true,
         update: true,
         delete: true,
       },
-      "/test.x/users.dev": {
+      "/requests.dev": {
         view: true,
         create: true,
-        update: true,
-        delete: true,
-      }
+        update: false,
+        delete: false,
+      },
+      "/reports.dev": {
+        view: true,
+        create: true,
+        update: false,
+        delete: false,
+      },
     },
     allowedForms: [],
   },
   STAFF: {
     allowedPages: {
-      home: {
+      "/home.dev": {
         view: true,
         create: true,
         update: false,
         delete: false,
-      }
+      },
+      "/requests.dev": {
+        view: true,
+        create: true,
+        update: false,
+        delete: false,
+      },
+      "/reports.dev": {
+        view: true,
+        create: true,
+        update: false,
+        delete: false,
+      },
     },
     allowedForms: [],
   },
   USER: {
     allowedPages: {
-      home: {
+      "/home.dev": {
         view: true,
         create: false,
         update: false,
