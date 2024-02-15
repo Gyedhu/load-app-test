@@ -29,15 +29,13 @@ function SidebarButton(props: SidebarButtons) {
         return (
           <Link href={path}>
             <button
-              className={
-                clsx(
-                  `btn btn-primary flex items-center`,
-                  !isActive ? `btn-outline border-0` : ``,
-                  isExpanded
-                    ? `w-[175px] justify-start`
-                    : `w-[45px]  max-h-[45px] border-none`
-                )
-              }
+              className={clsx(
+                `btn btn-primary flex items-center`,
+                !isActive ? `btn-outline border-0` : ``,
+                isExpanded
+                  ? `w-[175px] justify-start`
+                  : `max-h-[45px]  w-[45px] border-none`,
+              )}
             >
               <i>{icon}</i>
               {isExpanded && <p className="text-md">{children}</p>}
